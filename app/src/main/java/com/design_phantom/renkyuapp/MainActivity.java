@@ -30,25 +30,15 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.character);
         imageView.setImageBitmap(_character);
 
-        ConstraintLayout layout = findViewById(R.id.layout);
-
-        Button bt = new Button(this);
-        bt.setText("連休取得！");
-        bt.setOnClickListener(new View.OnClickListener() {
+        _btSubmit.setText("連休取得！");
+        _btSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //連休情報を取得します
-
-
-
+                
 
             }
         });
-
-        layout.addView(bt);
-
-
-
 
     }
 }
