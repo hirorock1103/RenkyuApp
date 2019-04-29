@@ -11,7 +11,10 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/character"
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         />
 
     <Button
@@ -19,6 +22,9 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:id="@+id/get_holidays"
+        app:layout_constraintLeft_toRightOf="@+id/character"
+        app:layout_constraintTop_toTopOf="@+id/character"
+        app:layout_constraintBottom_toBottomOf="@+id/character"
 
         />
 
